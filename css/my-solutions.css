@@ -60,3 +60,151 @@
 .ex-7-img:hover {
     filter: saturate(0);
 }
+
+/* Es 8 */
+.ex-8-img {
+    transition-property: filter, border-radius;
+    transition-duration: 1s, 2s;
+}
+
+.ex-8-img:hover {
+    filter: sepia(1);
+    border-radius: 25px;
+}
+
+/* Es 9 */
+.ex-9-img {
+    transition-property: filter, border-radius, transform;
+    transition-duration: 1s, 1s, 2s;
+}
+
+.ex-9-img:hover {
+    filter: sepia(1);
+    border-radius: 25px;
+    transform: scale(1.5,1.5);
+}
+
+/* Es 10 */
+.ex-10-icon:hover {
+    animation: ex-10-rotate 1.5s linear infinite;
+}
+
+@keyframes ex-10-rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Es 11 */
+.ex-11-icon:hover {
+    animation: ex-11-rotate 2s ease-in;
+}
+
+@keyframes ex-11-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(300deg);
+    }
+}
+
+/* Es 12 */
+.ex-12-button:hover .ex-12-top-white {
+    position: absolute;
+    animation: ex-12-move-top 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    position: absolute;
+    animation: ex-12-move-bottom 2s linear;
+}
+
+@keyframes ex-12-move-top {
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: 70%;
+    }
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes ex-12-move-bottom {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 70%;
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+/* Es 13 */
+.ex-13-button:hover .ex-13-top-white {
+    position: absolute;
+    animation: ex-13-move-top 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    position: absolute;
+    animation: ex-13-move-bottom 2s linear;
+}
+
+@keyframes ex-13-move-top {
+    0% {
+        left: 20%;
+        top: -10%;
+    }
+    20% {
+        left: 80%;
+        top: -10%;
+    }
+    40% {
+        left: 80%;
+        top: 80%;
+    }
+    60% {
+        left: 0;
+        top: 80%;
+    }
+    80% {
+        left: -10%;
+        top: -10%;
+    }
+    100% {
+        left: 20%;
+        top: -10%;
+    }
+}
+
+@keyframes ex-13-move-bottom {
+    0% {
+        right: 20%;
+        bottom: -10%;
+    }
+    20% {
+        right: 80%;
+        bottom: -10%;
+    }
+    40% {
+        right: 80%;
+        bottom: 80%;
+    }
+    60% {
+        right: 0;
+        bottom: 80%;
+    }
+    80% {
+        right: -10%;
+        bottom: -10%;
+    }
+    100% {
+        right: 20%;
+        bottom: -10%;
+    }
+}
